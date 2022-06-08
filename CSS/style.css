@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        width: 100%;
+}
+
+header {
+        background-image: url(./images/bg-hero-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* font-family: 'Poppins', sans-serif; */
+        padding: 20px 40px;
+        background-color: hsl(193, 100%, 96%);
+}
+
+nav img {
+        width: 100px;
+}
+
+header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+}
+
+header nav button {
+        background-color: white;
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+}
+
+header nav button a {
+        font-weight: 700;
+}
+
+.header-2 .content button {
+        padding: 10px 30px;
+        border-radius: 20px;
+        outline: none;
+        background-color: hsl(322, 100%, 66%);
+        border: none;
+        margin-top: 20px;
+}
+
+.header-2 .content button:hover {
+        cursor: pointer;
+        background-color: pink;
+        color: white;
+}
+
+.header-2 .content h1 {
+        font-weight: 600;
+        /* letter-spacing: 5; */
+        /* line-height: 30px; */
+}
+
+header nav button a {
+        text-decoration: none;
+}
+
+header .header-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+header .header-2 .img-1 img {
+        width: 100%;
+}
+
+/* section */
+.services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 120px 80px 40px;
+        align-items: center;
+        width: 100%;
+}
+
+.service {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 10px 50px 65px;
+        align-items: center;
+        margin-bottom: 40px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+}
+
+.service img {
+        max-width: 100%;
+        width: 520px;
+        padding: 15px 80px 15px 60px;
+}
+
+.content {
+        padding-left: 70px;
+}
+
+.content p {
+        width: 78%;
+}
+
+.content h2 {
+        margin: 10px 0px;
+}
+
+.left {
+        margin-right: 0px;
+}
+
+/* promo */
+.advert {
+        position: relative;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        max-width: 100%;
+        width: 55%;
+        margin: auto;
+        padding: 60px 0px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: -100px;
+        background-color: white;
+}
+
+.btn {
+        padding: 10px 30px;
+        border-radius: 20px;
+        outline: none;
+        background-color: hsl(322, 100%, 66%);
+        border: none;
+        margin-top: 20px;
+}
+
+.btn:hover {
+        cursor: pointer;
+        background-color: pink;
+        color: white;
+}
+
+/* footer */
+footer {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(192, 100%, 9%);
+        padding: 180px 0 40px;
+        color: white;
+}
+
+footer .logo1 {
+        width: 200px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+}
+
+footer .footer li {
+        list-style-type: none;
+        margin-bottom: 20px;
+}
+
+footer .footer li a {
+        color: white;
+        text-decoration: none;
+}
+
+footer .footer li a:hover {
+        border-bottom: 1px solid white;
+}
+
+footer .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0 60px;
+        column-gap: 10px;
+        justify-content: center;
+}
+
+.footer .sec-2 .sec-3 li a {
+        text-align: center;
+}
+
+.social-links i {
+        font-size: 1.3rem;
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        cursor: grabbing;
+}
+
+.social-links i:hover {
+        color: hsl(322, 100%, 66%);
+}
+
+.social-links p {
+        margin-top: 50px;
+}
+
+
+/* media queries */
+@media screen and (max-width:768px) {
+
+        header .header-2 {
+                display: block;
+                padding: 30px 0;
+        }
+
+        header .header-2 .content {
+                margin-bottom: 10%;
+        }
+
+        header .header-2 .content h1 {
+                margin-right: 60px;
+                font-size: 25px;
+        }
+
+        header .header-2 .content p {
+                text-align: center;
+        }
+
+        header .header-2 .content butt {
+                text-align: center;
+        }
+
+        header nav button a {
+                color: black;
+        }
+
+        .services {
+                padding-left: 40px;
+                padding-right: 40px;
+                text-align: center;
+        }
+
+        .service {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-left: 30px;
+                padding-right: 30px;
+                /* margin-left: 0; */
+                width: 100%;
+        }
+
+        .content h2 {
+                margin-right: 60px;
+        }
+
+        .advert {
+                width: 75%;
+        }
+
+        .advert h2 {
+                font-size: 16px;
+        }
+
+        .advert .btn {
+                color: white;
+        }
+
+        footer .footer {
+                display: block;
+                float: right;
+        }
+
+        .social-links p {
+                text-align: center;
+        }
+
+        .header-2 .content button {
+                margin-left: 30px;
+                margin-bottom: 20px;
+                color: white;
+        }
+
+        .header-2 .content h1 {
+                margin-bottom: 20px;
+        }
+}
